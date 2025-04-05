@@ -1,0 +1,71 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-size: 16px;
+        background: rgb(152, 201, 250);
+    }
+    
+    .jumbotron container-fluid mt-2 text-center p-2 {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    h3 {
+        font-weight: bold;
+    }
+    
+    .forecast {
+        font-size: 0.9em;
+    }
+    
+    span {
+        font-size: 1em;
+    }
+    
+    li:hover {
+        background-color: lightslategray;
+        text-decoration: underline;
+    }
+    
+    @media (max-width:1400px) {
+        .weather-data .current-weather {
+            padding: 20px;
+        }
+        .weather-cards {
+            flex-wrap: wrap;
+        }
+        .weather-cards .card {
+            width: calc(100% / 4 - 15px);
+        }
+    }
+    
+    @media (max-width:1200px) {
+        .weather-cards .card {
+            width: calc(100% /3 - 15px);
+        }
+    }
+    
+    @media (max-width:950px) {
+        .weather-input {
+            width: 450px;
+        }
+        .weather-cards .card {
+            width: calc(100% / 2 - 10px)
+        }
+    }
+    
+    @media (max-width:750px) {
+        .container {
+            flex-wrap: wrap;
+            padding: 15px
+        }
+        .weather-input {
+            width: 100%;
+        }
+    }

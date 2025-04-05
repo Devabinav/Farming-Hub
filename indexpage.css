@@ -1,0 +1,150 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-Page Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Ensures full-page height */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/img4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 15px;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 10px 15px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    color: rgb(169, 166, 166);
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    font-size: 20px;
+    color: white;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    color: black;
+    background-color: rgb(205, 197, 240);
+    padding: 10px;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+/* Responsive Design */
+@media (max-width: 804px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 707px) {
+    header h1 {
+        font-size: 1.0rem;
+    }
+
+    header p {
+        font-size: 1.0rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 2%;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 10px;
+    }
+}
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 1.0rem;
+    }
+
+    header p {
+        font-size: 1.0rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 1%;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 10px;
+    }
+}
